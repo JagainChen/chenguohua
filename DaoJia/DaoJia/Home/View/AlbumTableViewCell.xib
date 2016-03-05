@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="255" id="gP3-gP-fbf" customClass="AlbumTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="255"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gP3-gP-fbf" id="8IK-zL-ucf">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="254"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggm-2L-HDl">
+                        <rect key="frame" x="10" y="10" width="300" height="150"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UF6-f5-q58">
+                                <rect key="frame" x="0.0" y="-60" width="300" height="270"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDA-X9-k3K">
+                                <rect key="frame" x="10" y="105" width="200" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0lE-dD-oEX"/>
+                                    <constraint firstAttribute="width" constant="200" id="hyX-3x-oQ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdu-iU-egt">
+                                <rect key="frame" x="10" y="127" width="120" height="15"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Q2h-0R-dV2"/>
+                                    <constraint firstAttribute="height" constant="15" id="el0-xi-Qad"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qll-Pc-PT0">
+                                <rect key="frame" x="255" y="99" width="34" height="34"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="GYi-Ig-2We"/>
+                                    <constraint firstAttribute="width" constant="34" id="QjC-sW-VEC"/>
+                                </constraints>
+                                <state key="normal" image="btn_auxiliary_good.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pB-fc-ZZQ">
+                                <rect key="frame" x="262" y="132" width="25" height="10"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="DxA-fj-yip"/>
+                                    <constraint firstAttribute="width" constant="25" id="PW7-F8-VEC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_video_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xpj-8K-VAC">
+                                <rect key="frame" x="257" y="10" width="32" height="32"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Osw-xP-lqN"/>
+                                    <constraint firstAttribute="width" constant="32" id="jM2-2C-osS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dDA-X9-k3K" secondAttribute="bottom" constant="24" id="6J0-Nl-QgL"/>
+                            <constraint firstItem="UF6-f5-q58" firstAttribute="top" secondItem="Ggm-2L-HDl" secondAttribute="top" constant="-60" id="8rP-cy-6UP"/>
+                            <constraint firstAttribute="bottom" secondItem="Gdu-iU-egt" secondAttribute="bottom" constant="8" id="HkE-AW-ZN7"/>
+                            <constraint firstAttribute="bottom" secondItem="UF6-f5-q58" secondAttribute="bottom" constant="-60" id="IBW-DN-LfM"/>
+                            <constraint firstItem="Xpj-8K-VAC" firstAttribute="top" secondItem="Ggm-2L-HDl" secondAttribute="top" constant="10" id="Lcc-4j-oxg"/>
+                            <constraint firstAttribute="trailing" secondItem="UF6-f5-q58" secondAttribute="trailing" id="SZc-zw-K3I"/>
+                            <constraint firstItem="Gdu-iU-egt" firstAttribute="leading" secondItem="Ggm-2L-HDl" secondAttribute="leading" constant="10" id="UoE-vJ-RYa"/>
+                            <constraint firstAttribute="bottom" secondItem="qll-Pc-PT0" secondAttribute="bottom" constant="17" id="hHf-T5-7hK"/>
+                            <constraint firstAttribute="trailing" secondItem="qll-Pc-PT0" secondAttribute="trailing" constant="11" id="jth-Ep-uCu"/>
+                            <constraint firstAttribute="trailing" secondItem="Xpj-8K-VAC" secondAttribute="trailing" constant="11" id="lfA-jC-fYI"/>
+                            <constraint firstAttribute="height" constant="150" id="lvV-wL-In1"/>
+                            <constraint firstAttribute="trailing" secondItem="8pB-fc-ZZQ" secondAttribute="trailing" constant="13" id="pEk-tZ-mLR"/>
+                            <constraint firstItem="dDA-X9-k3K" firstAttribute="leading" secondItem="Ggm-2L-HDl" secondAttribute="leading" constant="10" id="wAe-yD-ZmX"/>
+                            <constraint firstAttribute="bottom" secondItem="8pB-fc-ZZQ" secondAttribute="bottom" constant="8" id="wv4-1a-h7R"/>
+                            <constraint firstItem="UF6-f5-q58" firstAttribute="leading" secondItem="Ggm-2L-HDl" secondAttribute="leading" id="xfk-Vq-qbH"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9s-ga-8Yw" customClass="WXLabel">
+                        <rect key="frame" x="10" y="165" width="300" height="60"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ggm-2L-HDl" secondAttribute="trailing" constant="2" id="Dgx-Iy-Nrh"/>
+                    <constraint firstItem="d9s-ga-8Yw" firstAttribute="top" secondItem="Ggm-2L-HDl" secondAttribute="bottom" constant="5" id="IYf-xy-oWa"/>
+                    <constraint firstItem="d9s-ga-8Yw" firstAttribute="leading" secondItem="8IK-zL-ucf" secondAttribute="leadingMargin" constant="2" id="VqB-UZ-Vci"/>
+                    <constraint firstItem="Ggm-2L-HDl" firstAttribute="leading" secondItem="8IK-zL-ucf" secondAttribute="leadingMargin" constant="2" id="cOw-Kl-2Qj"/>
+                    <constraint firstItem="Ggm-2L-HDl" firstAttribute="top" secondItem="8IK-zL-ucf" secondAttribute="topMargin" constant="2" id="d3i-Vm-jug"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="d9s-ga-8Yw" secondAttribute="trailing" constant="2" id="m8j-L2-itq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="imageUiView" destination="Ggm-2L-HDl" id="mc3-M1-6bC"/>
+                <outlet property="introLabel" destination="d9s-ga-8Yw" id="7Yv-Xj-FeK"/>
+                <outlet property="likeButton" destination="qll-Pc-PT0" id="4sl-6z-QoV"/>
+                <outlet property="likeCount" destination="8pB-fc-ZZQ" id="byz-ol-7xC"/>
+                <outlet property="recipeImageView" destination="UF6-f5-q58" id="H4F-Pg-IfB"/>
+                <outlet property="titleLabel" destination="dDA-X9-k3K" id="FMz-cG-hXx"/>
+                <outlet property="userNameLabel" destination="Gdu-iU-egt" id="kC9-v6-C2g"/>
+                <outlet property="videoImage" destination="Xpj-8K-VAC" id="sFH-zs-wGL"/>
+            </connections>
+            <point key="canvasLocation" x="551" y="409.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_auxiliary_good.png" width="42" height="42"/>
+        <image name="ico_video_big.png" width="44" height="44"/>
+    </resources>
+</document>
